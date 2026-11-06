@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070b14">
+  <meta name="description" content="Muhammad Yaseen — Software Engineering student, Laravel/PHP developer, and aspiring AI engineer building thoughtful digital products.">
+  <meta property="og:title" content="Muhammad Yaseen — Software Engineer & AI Builder">
+  <meta property="og:description" content="Full-stack development, AI experiments, and ideas built for the real world.">
+  <meta property="og:type" content="website">
+  <title>Muhammad Yaseen — Software Engineer & AI Builder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop stop-color='%2367e8f9'/%3E%3Cstop offset='1' stop-color='%23a78bfa'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='18' fill='%23070b14'/%3E%3Cpath d='M14 43 27 15h10l13 28H39l-3-7H26l-3 7z' fill='url(%23g)'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <canvas id="particleCanvas" aria-hidden="true"></canvas>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#home" aria-label="Muhammad Yaseen home">
+      <span class="brand-mark"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M7 30 17 8h6l10 22h-7l-2-5h-8l-2 5z"/><path d="M17 20h7"/></svg></span>
+      <span class="brand-copy"><strong>YASEEN<span>.</span></strong><small>SOFTWARE / AI</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#work">Projects</a><a href="#stack">Toolkit</a><a href="#journey">Journey</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button theme-toggle" id="themeToggle" type="button" aria-label="Switch color theme" title="Switch theme"><span class="theme-icon">☼</span></button>
+      <a class="button button-small button-outline header-cta" href="#contact">Let's talk <span>↗</span></a>
+      <button class="menu-toggle icon-button" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-shell" id="home">
+      <div class="hero-grid"></div>
+      <div class="hero-copy">
+        <div class="eyebrow reveal"><span class="status-dot"></span> SOFTWARE ENGINEERING · AI EXPLORATION</div>
+        <p class="hero-kicker reveal delay-1">Hey, I'm <span>Muhammad Yaseen</span></p>
+        <h1 class="hero-title reveal delay-2">I build for<br>the <span class="gradient-text">real world</span><span class="title-period">.</span></h1>
+        <p class="hero-description reveal delay-3">Full-stack developer by practice. AI engineer in the making. I turn complex ideas into useful digital products—and keep exploring what comes next.</p>
+        <div class="hero-actions reveal delay-3">
+          <a class="button button-primary" href="#work">Explore my work <span>↗</span></a>
+          <a class="button button-ghost" href="#about"><span class="play-symbol">▶</span> Get to know me</a>
+        </div>
+        <div class="hero-foot reveal delay-4"><span class="mono muted">CURRENT FOCUS</span><span class="focus-chip"><i></i> Laravel · Python · Machine Learning</span></div>
+      </div>
+
+      <div class="hero-art reveal delay-2" aria-label="Abstract animated AI core illustration">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div><div class="art-orbit orbit-three"></div>
+        <div class="orbit-node node-a"></div><div class="orbit-node node-b"></div><div class="orbit-node node-c"></div>
+        <div class="core-glow"></div>
+        <div class="core-card glass-card">
+          <div class="core-top"><span class="mono">PERSONAL SYSTEM</span><span class="live-indicator"><i></i> ONLINE</span></div>
+          <div class="core-symbol"><span class="symbol-ring">Y<span class="symbol-spark">✳</span></span></div>
+          <div class="core-name">Curiosity <span>→</span> Creation</div>
+          <div class="core-sub mono">HUMAN IDEAS / ENGINEERED SYSTEMS</div>
+          <div class="signal-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+        <div class="floating-tag tag-code"><span class="tag-icon">⌘</span><span><small>BUILD MODE</small><b>Ship useful things</b></span></div>
+        <div class="floating-tag tag-ai"><span class="tag-ai-icon">✳</span><span><small>EXPLORING</small><b>Applied AI + ML</b></span></div>
+        <span class="art-coordinate mono">34°46'N / SWAT</span>
+        <span class="art-caption mono">FIG 01 — A BUILDER'S MINDSET</span>
+      </div>
+      <a class="scroll-cue mono" href="#about"><span class="scroll-line"></span> SCROLL TO EXPLORE</a>
+      <div class="hero-index mono">01 <span>/</span> 05</div>
+    </section>
+
+    <section class="ticker" aria-label="Areas of interest"><div class="ticker-track"><span>FULL-STACK DEVELOPMENT</span><b>✳</b><span>ARTIFICIAL INTELLIGENCE</span><b>✳</b><span>PRODUCT THINKING</span><b>✳</b><span>CONTINUOUS LEARNING</span><b>✳</b><span>FULL-STACK DEVELOPMENT</span><b>✳</b><span>ARTIFICIAL INTELLIGENCE</span><b>✳</b><span>PRODUCT THINKING</span><b>✳</b><span>CONTINUOUS LEARNING</span><b>✳</b></div></section>
+
+    <section class="section section-shell about-section" id="about">
+      <div class="section-heading reveal"><p class="section-label mono"><span>01</span> / A LITTLE ABOUT ME</p><h2>Grounded in code.<br><span class="muted-heading">Curious about what's next.</span></h2></div>
+      <div class="about-layout">
+        <div class="about-intro reveal"><div class="portrait-frame"><div class="portrait-grid"></div><div class="portrait-monogram">MY<span>.</span></div><div class="portrait-bottom mono"><span>IN PROGRESS</span><span class="portrait-line"></span><span>EST. 20XX</span></div><div class="portrait-sticker">BUILD<br>BETTER<br><b>EVERY DAY.</b></div></div><p class="about-quote">“The best way to predict what technology can do is to get curious, build something, and learn from the result.”</p><p class="about-byline mono">— MY WORKING PHILOSOPHY</p></div>
+        <div class="about-content reveal delay-1"><p class="body-lead">I'm a Software Engineering student at the <strong>University of Swat</strong>, developing my craft across full-stack web development and applied AI.</p><p class="body-copy">I enjoy building practical systems with Laravel and PHP, understanding how products work end to end, and experimenting with Python and machine learning. I care about clean foundations, useful features, and turning what I learn into something people can actually use.</p><p class="body-copy">Right now, I'm strengthening my ML foundations while building software projects and exploring privacy-minded AI assistants. I'm at my best when I'm solving a real problem and learning something new along the way.</p>
+          <div class="about-facts"><div class="fact"><span class="fact-icon">⌘</span><div><small>EDUCATION</small><strong>BS Software Engineering</strong><span>University of Swat</span></div></div><div class="fact"><span class="fact-icon">◈</span><div><small>CORE STRENGTH</small><strong>Web application development</strong><span>Laravel · PHP · Databases</span></div></div><div class="fact"><span class="fact-icon">✳</span><div><small>GROWING INTO</small><strong>AI & Machine Learning</strong><span>Python · ML foundations</span></div></div><div class="fact"><span class="fact-icon">↗</span><div><small>OPEN TO</small><strong>Meaningful opportunities</strong><span>Development · Collaboration · Research</span></div></div></div>
+          <a class="text-link" href="#journey">More about my journey <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-shell work-section" id="work">
+      <div class="section-heading heading-row reveal"><div><p class="section-label mono"><span>02</span> / SELECTED WORK</p><h2>Things I've been<br><span class="muted-heading">building lately.</span></h2></div><p class="heading-aside">Real projects. Real learning.<br>Always one iteration better.</p></div>
+      <div class="project-toolbar reveal"><p class="mono muted">PROJECT INDEX <span id="projectCount">04 ENTRIES</span></p><div class="filter-group" role="group" aria-label="Filter projects"><button class="filter-button active" data-filter="all" type="button">All <span>04</span></button><button class="filter-button" data-filter="web" type="button">Web apps</button><button class="filter-button" data-filter="ai" type="button">AI / ML</button><button class="filter-button" data-filter="saas" type="button">SaaS</button></div></div>
+      <div class="project-grid" id="projectGrid">
+        <article class="project-card project-featured reveal" data-category="web saas" data-project="mart" tabindex="0">
+          <div class="project-visual visual-mart"><div class="visual-window"><div class="window-top"><span></span><span></span><span></span><i>VECTABYTE / MART</i></div><div class="dash-layout"><div class="dash-sidebar"><b>V.</b><i></i><i></i><i></i><i></i></div><div class="dash-main"><div class="dash-greeting">Sales overview <small>↗ live workspace</small></div><div class="dash-metrics"><div><small>Revenue</small><b>••••••</b><i>+ POS</i></div><div><small>Inventory</small><b>••••</b><i>+ stock</i></div><div><small>Reports</small><b>•••</b><i>+ insights</i></div></div><div class="dash-chart"><div class="chart-label">WEEKLY ACTIVITY</div><div class="chart-bars"><i style="--h:28%"></i><i style="--h:54%"></i><i style="--h:43%"></i><i style="--h:78%"></i><i style="--h:60%"></i><i style="--h:92%"></i><i style="--h:69%"></i><i style="--h:100%"></i><i style="--h:75%"></i><i style="--h:86%"></i><i style="--h:63%"></i><i style="--h:96%"></i></div></div></div></div></div><div class="visual-orb"></div><span class="visual-index mono">PROJECT_001</span></div>
+          <div class="project-info"><div class="project-meta"><span class="project-type">FULL-STACK · POS</span><span class="project-status"><i></i> ACTIVE BUILD</span></div><h3>Vectabyte Mart <span>↗</span></h3><p>A multi-tenant retail and point-of-sale platform focused on everyday store workflows, inventory, sales, and accounting.</p><div class="tag-list"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>Filament</span></div><div class="project-links"><a href="https://mart.vectabyte.net" target="_blank" rel="noopener noreferrer" class="project-link">Project site <span>↗</span></a><button type="button" class="case-link" data-case="mart">View overview <span>＋</span></button></div></div>
+        </article>
+        <article class="project-card reveal delay-1" data-category="ai" data-project="mira" tabindex="0">
+          <div class="project-visual visual-mira"><div class="mira-radar"><span class="radar-ring r1"></span><span class="radar-ring r2"></span><span class="radar-ring r3"></span><span class="radar-core">M<span>✳</span></span><i class="radar-dot d1"></i><i class="radar-dot d2"></i><i class="radar-dot d3"></i></div><div class="mira-label mono">LOCAL-FIRST / PERSONAL AI</div><div class="mira-readout mono"><span>VOICE</span><span>TEXT</span><span>MEMORY*</span></div><span class="visual-index mono">PROJECT_002</span></div>
+          <div class="project-info"><div class="project-meta"><span class="project-type">AI EXPERIMENT</span><span class="project-status status-explore"><i></i> IN DEVELOPMENT</span></div><h3>Mira <span>↗</span></h3><p>A personal assistant concept exploring voice and text interaction, useful context, and a more private AI workflow.</p><div class="tag-list"><span>Python</span><span>LLMs</span><span>Voice UX</span><span>Local AI</span></div><div class="project-links"><a href="https://github.com/yaseenkhan9177" target="_blank" rel="noopener noreferrer" class="project-link">GitHub profile <span>↗</span></a><button type="button" class="case-link" data-case="mira">View overview <span>＋</span></button></div></div>
+        </article>
+        <article class="project-card reveal" data-category="web saas" data-project="smartschool" tabindex="0">
+          <div class="project-visual visual-school"><div class="school-board"><div class="school-top"><div class="school-logo">S</div><span>SMART SCHOOL</span><i></i></div><div class="school-body"><div class="school-welcome">School operations,<br><b>in one place.</b></div><div class="school-mini-cards"><div><span>ATTENDANCE</span><b>▦</b><i></i></div><div><span>FEE RECORDS</span><b>↗</b><i></i></div><div><span>MESSAGING</span><b>✉</b><i></i></div></div><div class="school-footer"><span></span><span></span><span></span></div></div></div><span class="visual-index mono">PROJECT_003</span></div>
+          <div class="project-info"><div class="project-meta"><span class="project-type">EDTECH · WEB APP</span><span class="project-status status-build"><i></i> ITERATING</span></div><h3>SmartSchool SMS <span>↗</span></h3><p>A school-management project aimed at simplifying school workflows, records, and communication with families.</p><div class="tag-list"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>PWA</span></div><div class="project-links"><a href="https://github.com/yaseenkhan9177/smartschool-sms" target="_blank" rel="noopener noreferrer" class="project-link">Source repository <span>↗</span></a><button type="button" class="case-link" data-case="smartschool">View overview <span>＋</span></button></div></div>
+        </article>
+        <article class="project-card reveal delay-1" data-category="web saas" data-project="ownbus" tabindex="0">
+          <div class="project-visual visual-bus"><div class="bus-skyline"><span class="skyline s1"></span><span class="skyline s2"></span><span class="skyline s3"></span><span class="skyline s4"></span><span class="skyline s5"></span><span class="skyline s6"></span></div><div class="route-line"><span class="route-dot"></span><span class="route-dash"></span><span class="route-dot end"></span></div><div class="bus-card"><span class="bus-card-icon">↗</span><div><small>ROUTE PLANNING</small><b>Move smarter.</b></div><span class="bus-arrow">→</span></div><span class="visual-index mono">PROJECT_004</span></div>
+          <div class="project-info"><div class="project-meta"><span class="project-type">TRANSPORT · SAAS</span><span class="project-status status-build"><i></i> ITERATING</span></div><h3>OwnBus <span>↗</span></h3><p>A transport-management platform concept for organizing fleet and bus-operator workflows.</p><div class="tag-list"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>SaaS</span></div><div class="project-links"><a href="https://transport.vectabyte.net" target="_blank" rel="noopener noreferrer" class="project-link">Project site <span>↗</span></a><button type="button" class="case-link" data-case="ownbus">View overview <span>＋</span></button></div></div>
+        </article>
+      </div>
+      <div class="projects-bottom reveal"><span class="mono muted">MORE EXPERIMENTS ARE ALWAYS IN PROGRESS.</span><a class="text-link" href="https://github.com/yaseenkhan9177" target="_blank" rel="noopener noreferrer">Explore GitHub <span>↗</span></a></div>
+    </section>
+
+    <section class="section section-shell stack-section" id="stack">
+      <div class="section-heading heading-row reveal"><div><p class="section-label mono"><span>03</span> / MY TOOLKIT</p><h2>The tools I use<br><span class="muted-heading">to turn ideas into systems.</span></h2></div><p class="heading-aside">A growing toolkit, not a finished list.<br>Learning is part of the build.</p></div>
+      <div class="stack-layout">
+        <div class="stack-intro reveal"><div class="stack-emblem"><div class="emblem-ring er1"></div><div class="emblem-ring er2"></div><div class="emblem-core">&lt;/&gt;</div><span class="emblem-node en1"></span><span class="emblem-node en2"></span><span class="emblem-node en3"></span></div><div class="stack-caption mono">TOOLKIT / EVOLVING</div><h3>Build with what you know.<br><span class="gradient-text">Learn what you need.</span></h3><p>I focus on understanding the underlying problem, choosing practical tools, and improving the solution through iteration.</p><a href="#contact" class="text-link">Build something together <span>↗</span></a></div>
+        <div class="stack-groups reveal delay-1"><div class="stack-group"><div class="stack-group-head"><span class="stack-number mono">01</span><div><h3>Web development</h3><p>Building the product foundation</p></div><span class="stack-chevron">↗</span></div><div class="skill-pills"><span class="skill-pill"><b class="tech-icon php-icon">php</b>PHP</span><span class="skill-pill"><b class="tech-icon laravel-icon">L</b>Laravel</span><span class="skill-pill"><b class="tech-icon">⌘</b>REST APIs</span><span class="skill-pill"><b class="tech-icon">▤</b>HTML & CSS</span><span class="skill-pill"><b class="tech-icon">JS</b>JavaScript</span><span class="skill-pill"><b class="tech-icon">▦</b>Filament</span></div></div><div class="stack-group"><div class="stack-group-head"><span class="stack-number mono">02</span><div><h3>Data & engineering</h3><p>Working with information and systems</p></div><span class="stack-chevron">↗</span></div><div class="skill-pills"><span class="skill-pill"><b class="tech-icon python-icon">Py</b>Python</span><span class="skill-pill"><b class="tech-icon">◫</b>MySQL</span><span class="skill-pill"><b class="tech-icon">⌘</b>Git & GitHub</span><span class="skill-pill"><b class="tech-icon">▥</b>Data processing</span></div></div><div class="stack-group"><div class="stack-group-head"><span class="stack-number mono">03</span><div><h3>AI & intelligent systems</h3><p>Actively learning and experimenting</p></div><span class="stack-chevron">↗</span></div><div class="skill-pills"><span class="skill-pill learning"><b class="tech-icon">✳</b>Machine Learning <em>Learning</em></span><span class="skill-pill learning"><b class="tech-icon">◉</b>Deep Learning <em>Learning</em></span><span class="skill-pill learning"><b class="tech-icon">✧</b>LLM workflows <em>Exploring</em></span><span class="skill-pill learning"><b class="tech-icon">◌</b>AI agents <em>Exploring</em></span></div></div></div>
+      </div>
+      <div class="stack-note reveal"><span class="note-spark">✳</span><p><strong>Honest by design.</strong> This list reflects the technologies I've used or am actively learning—not a claim of expert-level mastery in every tool.</p></div>
+    </section>
+
+    <section class="section section-shell journey-section" id="journey">
+      <div class="section-heading reveal"><p class="section-label mono"><span>04</span> / THE JOURNEY</p><h2>Still learning.<br><span class="muted-heading">Always moving forward.</span></h2><p class="section-subtitle">My path is a work in progress—and that's what makes it exciting.</p></div>
+      <div class="journey-grid"><div class="journey-line" aria-hidden="true"></div><article class="journey-card reveal"><div class="journey-marker">01</div><div class="journey-card-top"><span class="mono">FOUNDATION</span><span class="journey-year">BSSE</span></div><h3>Learning the fundamentals</h3><p>Studying Software Engineering at the University of Swat, building a foundation in software design, programming, and problem solving.</p><div class="journey-tags"><span>Software Engineering</span><span>Problem Solving</span></div></article><article class="journey-card reveal delay-1"><div class="journey-marker">02</div><div class="journey-card-top"><span class="mono">IN PRACTICE</span><span class="journey-year">BUILD</span></div><h3>Shipping real applications</h3><p>Applying my learning to web products—from point-of-sale and school workflows to transport-management ideas.</p><div class="journey-tags"><span>Laravel / PHP</span><span>Full-stack</span></div></article><article class="journey-card reveal delay-2"><div class="journey-marker">03</div><div class="journey-card-top"><span class="mono">NEXT FRONTIER</span><span class="journey-year">AI / ML</span></div><h3>Exploring intelligent systems</h3><p>Strengthening Python and machine learning foundations, then taking on deeper experiments in AI agents and applied research.</p><div class="journey-tags"><span>Python</span><span>Machine Learning</span></div></article></div>
+      <div class="principles-row reveal"><div><span class="principle-number mono">01</span><b>Stay curious</b><span>Ask better questions.</span></div><div><span class="principle-number mono">02</span><b>Build with purpose</b><span>Solve a real problem.</span></div><div><span class="principle-number mono">03</span><b>Keep improving</b><span>Progress over perfection.</span></div></div>
+    </section>
+
+    <section class="section section-shell contact-section" id="contact">
+      <div class="contact-panel reveal"><div class="contact-stars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="contact-content"><p class="section-label mono"><span>05</span> / WHAT'S NEXT?</p><h2>Have a good idea?<br><span class="gradient-text">Let's make it real.</span></h2><p>I'm interested in meaningful software projects, AI experiments, freelance collaborations, and opportunities to keep growing.</p><div class="contact-actions"><a class="button button-primary" href="mailto:?subject=Let's%20connect%20with%20Muhammad%20Yaseen" id="emailCta">Start a conversation <span>↗</span></a><button class="button button-outline" type="button" id="copyProfile">Copy my profile link <span>⧉</span></button></div><div class="contact-socials"><a href="https://github.com/yaseenkhan9177" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a><a href="https://vectabyte.net" target="_blank" rel="noopener noreferrer">Vectabyte <span>↗</span></a><a href="resume.html">Résumé <span>↗</span></a></div></div><div class="contact-orb"><div class="contact-orb-ring cr1"></div><div class="contact-orb-ring cr2"></div><div class="contact-orb-ring cr3"></div><div class="contact-orb-core">MY<span>.</span></div><span class="orb-label mono">OPEN TO WHAT'S NEXT</span></div><div class="contact-footer mono"><span>BUILT WITH CURIOSITY.</span><span>LET'S SEE WHAT WE CAN CREATE.</span></div></div>
+      <div class="contact-note reveal"><span class="note-spark">✳</span><p><strong>Before publishing:</strong> add your preferred email and professional social links to <code>script.js</code> so visitors can reach you directly.</p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell"><a class="brand footer-brand" href="#home"><span class="brand-mark"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M7 30 17 8h6l10 22h-7l-2-5h-8l-2 5z"/><path d="M17 20h7"/></svg></span><span class="brand-copy"><strong>YASEEN<span>.</span></strong><small>SOFTWARE / AI</small></span></a><p class="mono">DESIGNED & BUILT WITH INTENTION <span>✳</span></p><a href="#top" class="back-top">BACK TO TOP ↑</a><small class="copyright">© <span id="yearNow"></span> MUHAMMAD YASEEN</small></footer>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true"><div class="mobile-menu-top"><span class="mono">NAVIGATION / MENU</span><button class="icon-button" id="menuClose" type="button" aria-label="Close navigation">×</button></div><nav><a href="#about"><span>01</span> About <b>↗</b></a><a href="#work"><span>02</span> Projects <b>↗</b></a><a href="#stack"><span>03</span> Toolkit <b>↗</b></a><a href="#journey"><span>04</span> Journey <b>↗</b></a><a href="#contact"><span>05</span> Contact <b>↗</b></a></nav><p class="mono">BUILD SOMETHING THAT MATTERS.</p></div>
+  <div class="modal-backdrop" id="caseModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true"><div class="case-modal"><button class="modal-close icon-button" id="modalClose" type="button" aria-label="Close project overview">×</button><p class="section-label mono" id="modalEyebrow">PROJECT OVERVIEW</p><h2 id="modalTitle">Project title</h2><p id="modalDescription"></p><div class="modal-detail-list" id="modalDetails"></div><div class="modal-actions"><a class="button button-primary" id="modalLink" href="#" target="_blank" rel="noopener noreferrer">Open project <span>↗</span></a><button class="button button-outline" type="button" id="modalDone">Close overview</button></div></div></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <button class="back-to-top-float" id="floatTop" type="button" aria-label="Back to top">↑</button>
+</body>
+</html>
